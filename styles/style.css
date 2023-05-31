@@ -10,6 +10,7 @@
   --footer-color-text: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --underline-header-color: #ececec;
+  --clients-block-color: #afb1b8;
 }
 
 body {
@@ -35,6 +36,7 @@ a {
 
 .header {
   height: 80px;
+  width: 1600px;
   margin: 0;
   border-bottom: 1px solid var(--underline-header-color);
 }
@@ -116,7 +118,7 @@ a {
   /* position: relative;
   top: 0px;
   right: 10px; */
-  background-color: var(--footer-color);
+  background: url(../images/hero-bgd.jpg);
 }
 
 .button {
@@ -151,26 +153,51 @@ a {
 
 /* Features */
 
+.features {
+  margin: 94px 215px;
+  width: 1170px;
+  height: 248px;
+}
+
 .features h2 {
   color: var(--secondary-black-color);
   font-size: 14px;
   line-height: 1.17;
 }
 
-.features li {
-  flex: 0 1 270px;
-}
-
-.features {
-  margin: 94px 215px;
-  width: 1170px;
-  height: 98px;
-}
-
 .features .list {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
+}
+
+.features li {
+  flex: 0 1 270px;
+  height: 248px;
+}
+
+.attantion {
+  background-image: url(../images/attantion.png);
+  background-repeat: no-repeat;
+}
+
+.punctuality {
+  background-image: url(../images/punctuality.png);
+  background-repeat: no-repeat;
+}
+
+.planing {
+  background-image: url(../images/planing.png);
+  background-repeat: no-repeat;
+}
+
+.card-technology {
+  background-image: url(../images/modern-technology.png);
+  background-repeat: no-repeat;
+}
+
+.card-inner-position {
+  margin-top: 150px;
 }
 
 /* What we do */
@@ -235,6 +262,29 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+/* Clients */
+
+.clients {
+  width: 1170px;
+  padding: 94px 215px;
+}
+
+.clients h2 {
+  color: var(--secondary-black-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-company {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Footer */
 
 .footer {
@@ -314,6 +364,7 @@ a {
   color: var(--primary-white-color);
   border-radius: 4px;
   padding: 6px 22px;
+  transition: 600ms;
 }
 
 .project h2 {
